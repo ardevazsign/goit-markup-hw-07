@@ -768,8 +768,8 @@ h3 {
     top: 0;
     left: 0;
     width: 428px;
-    /* width: 100vw;
-    height: 100vh; */
+    width: 100vw;
+    height: 100vh;
     padding: 40px 40px 40px 40px;
     background-color: var(--cloud);
     z-index: 999;
@@ -842,11 +842,10 @@ h3 {
   }
 
 
-/* ---------------- @media Query CSS   ---------*/
+/* ---------------- @media Query ---------*/
 
  @media screen and (max-width: 428px) {
         .container {
-            background-color: chartreuse;
             width: 100%;
             height: 100vh;
             padding: 0 8%;
@@ -867,27 +866,49 @@ h3 {
            display: none;
         }
         .mobile-menu-main{
-            display: block;
+            display:block;
         }
         .advantages {
-            display: grid;
+            /* display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-gap: 30px;   
+            grid-gap: 30px;    */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 8%;
+            gap: 48px;
+             margin-top: 48px;
         }
         .services-img{
-            display: grid;
+            /* display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-gap: 30px;
+            grid-gap: 30px; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 8%;
+            gap: 48px;
+             margin-top: 48px;
         }
         .team-members .members{
-            display: grid;
+            /* display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-gap: 30px;
+            grid-gap: 30px; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 8%;
+            gap: 48px;
+            margin-top: 48px;
         }
-        .customers{
-            display: grid;
+        .customer-section .customers{
+            /* display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-gap: 30px;
+            grid-gap: 30px; */
+            flex-wrap: wrap;
         }
         .annotation{
            text-align: center;
@@ -909,21 +930,47 @@ h3 {
             align-items: center;
             justify-content: center;
         }
+        /* ---------- portfolio ---------- */
+        .container-portfolio{
+            width: 100%;
+            height: 100vh;
+            padding: 0 8%;
+        }
+        .button-portfolio{
+            flex-wrap: wrap;
+        }
+        .row .third,
+        .row .second,
+        .row .first{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 8%;
+            gap: 48px;
+            margin-top: 48px;
+        }
+        .row .third{
+            margin-bottom: 48px;
+        }
     }  
         
-/*    
+   
 
-@media screen and (max-width: 768px) {
-    body {
-        background-color: aqua;
-    }
-} 
+/* @media screen and (max-width: 768px) {
+    .container {
+            background-color: aqua;
+             width: 100%;
+             height: 100vh;
+             padding: 0 8%;
+         }
+}  */
 
 
 
 
 
-
+/* 
 @media screen and (max-width: 1158px) {
     Body{
         background-color: tomato;
