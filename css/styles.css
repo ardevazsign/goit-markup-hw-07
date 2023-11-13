@@ -52,8 +52,7 @@ ul > li{
     font-weight: 800;
     line-height: 1.3;
     letter-spacing: 0.54px;
-    text-transform: uppercase;
-   
+    text-transform: uppercase;  
 }
 .studio {
     color: var(--background-font);
@@ -114,7 +113,6 @@ ul > li{
     width:  151px;
     height: 24px;
 }
-
 .contacts-menu > li > a {
     text-decoration: none;
     color: var(--paragraph-color);
@@ -132,7 +130,6 @@ ul > li{
     justify-content: center;
     gap: 40px;
 }
-
 /* --------------------- Hero Image ----------------------------*/
  h1 {
     color: var(--cloud);
@@ -242,7 +239,6 @@ ul > li{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
  /*--------------- Modal Form Content -----------*/
-/* h3 @ html */
 .modal-title {
     color: var(--background-font);
     text-align: center;
@@ -346,7 +342,6 @@ input[type="checkbox"]{
     align-items: center;
     justify-content: center;
 }
-
 .check-box a {
     text-decoration: underline;
 }
@@ -364,14 +359,11 @@ input[type="checkbox"]{
     letter-spacing: 0.64px;
     cursor: pointer;
 }
-
 .send-btn:hover {
     background-color: var(--hover-background);
 }
-/* -------------- End of Modal Form -------------------------- */
 /* ------------------------- Section1 ------------------------ */
-/* .hero-advantages */
-   
+/* .hero-advantages */   
 .advantages-icons {
     background-color: var(--cloud);
     display: flex;
@@ -401,9 +393,7 @@ input[type="checkbox"]{
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
-
 /*---------------- what are we doing-Section 2 ----------------------*/
-
 h2 {
     color: var(--background-font);
     margin-top: 10px;
@@ -417,15 +407,12 @@ h2 {
 .services{  
     padding-bottom: 120px;
 }
-
 .services-img{
     display: flex;
     justify-content: center;
     gap:24px;
     padding-top: 72px;
 }
-
-
 /* ---------------- Our team-section3 ------------------- */
 h3 {
     text-align: center;
@@ -465,14 +452,12 @@ h3 {
     padding-bottom: 32px;
 }
  /* -------- Team Social Media Icons ------------------- */
-
 .teams-social-media {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
 }
-
 .team-social-media {
     background-color: var(--primary-color);
     border-radius: 50%;
@@ -490,19 +475,16 @@ h3 {
     fill: var(--primary-white);
     padding: 12px;
 }
-
 /* -------------- Customers Section ------------------------- */
 .customer-section{
     padding-top: 72px;
     padding-bottom: 100px;
-
 }
 .customers{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
-    
+    gap: 24px;   
 }
 .customer-icon{
     border: 1px solid var(--Light-Slate);
@@ -512,8 +494,11 @@ h3 {
 .customer-icon svg {
     fill: var(--Light-Slate)
 }
-
-
+.customer-icon:hover,
+.customer-icon svg:hover{
+    fill: var(--hover-background);
+    border: 1px solid var(--hover-background);
+}
 /* ------------------- footer ---------------------------*/
 .annotation{
     background-color: var(--background-font);
@@ -555,12 +540,10 @@ h3 {
      letter-spacing: 0.32px;
      color: var(--primary-white);
  }
-
  .social-media-icons {
     display: flex;
     gap: 16px;
 }
-
 .social-media {
      background-color: var(--primary-color);
      border-radius: 50%;
@@ -606,11 +589,9 @@ h3 {
     outline: 1px solid var(--primary-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
  }
-
  input::placeholder{
     color: var(--Dairy);
  }
-
  .subscribe-btn{
     padding: 8px 24px;
     width: 165px;
@@ -637,8 +618,6 @@ h3 {
     align-items: center;
     justify-content: center;
  }
-/* -------------------End of Index.html--------------- */
-
 /* ------------------ portfolio.html ------------------*/
 .button-portfolio {
     color: var(--primary-color);
@@ -669,17 +648,13 @@ h3 {
         color: var(--primary-white);
         cursor: pointer;
 }
- 
 /* ----------- main portfolio ----------- */
-
-
  .row li{
     border: 1px solid var(--CORNFLOW);
     background-color: var(--primary-white);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex-shrink: 0;
     padding-bottom: 32px;
     cursor: pointer;
 }
@@ -687,8 +662,7 @@ h3 {
     border-radius: 5px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
                 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-                0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-   
+                0px 1px 6px 0px rgba(46, 47, 66, 0.08);   
 }
 .row h3 {
     padding-top: 32px;
@@ -699,30 +673,23 @@ h3 {
     margin: 0;
     padding-left: 16px;
 }
-.row .first{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 24px;
+.all-row{
+width: 100%;
+height: auto;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
 }
-.row .second {
+.row{
+    margin: 0 300px 120px 300px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    gap: 24px;
-    padding-top: 48px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
-
-.row .third {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 24px;
-    padding-top: 48px;
-    padding-bottom: 120px;
-}
-
-
      /* Overlay Slider */
 .card{
     position: relative;
@@ -743,10 +710,6 @@ h3 {
     height: 0px;
     overflow: hidden;
     transition:  0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    /* -webkit-transition: 0.5s ease;
-    -moz-transition: 0.5s ease;
-    -ms-transition: 0.5s ease;
-    -o-transition: 0.5s ease; */
 }
 .card:hover .slider{
     height: 100%;
@@ -760,13 +723,10 @@ h3 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* -------------------- Homework Number 7 --------------------------------------- */
-
 /* -------------------- Mobile Menu ------------ */
 .mobile-menu-btn{
     display: none;
 }
-
 .mobile-menu-main.is-open {
     transform: translateX(0);
 }
@@ -789,12 +749,12 @@ h3 {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border-radius: 50%;
     fill: var(--L-Grey);
-     display: block;
-     position: absolute;
-     top: 30px;
-     right: 110px;
-     font-size: 20px;
-     cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 110px;
+    font-size: 20px;
+    cursor: pointer;
  }
  .mobile-menu-close:hover {
      background-color: var(--Dairy);
@@ -832,7 +792,6 @@ h3 {
      line-height: 1.5;
      letter-spacing: 0.4px;
  }
- 
  .email-menu a:hover {
      color: var(--hover-background);
  }
@@ -844,16 +803,11 @@ h3 {
       gap: 58px;
       margin-bottom: 40px;
   }
-
-
 /* ---------------- @media Query ---------*/
-
  @media screen and (max-width: 428px) {
         .container {
             width: 100%;
-            max-width: none;
             height: 100vh;
-            overflow-x: hidden;
         }
         .mobile-menu-btn{
             display: block;
@@ -865,7 +819,8 @@ h3 {
             padding-left: 16px;
         }
         .mobile-menu-btn:hover{
-            background-color: var(--Light-Slate);
+            border: 1px solid var(--Light-Slate);
+            background-color: var(--cloud);
         }
         .menu,
         .contacts{
@@ -887,6 +842,11 @@ h3 {
             width: 100%;
             height: auto;
             background-position: center;
+        }
+        .modal {
+            position: absolute;
+            top: 100px;
+            width: 375px;
         }
         .hero-advantages .advantages {
             display: block;
@@ -952,23 +912,20 @@ h3 {
             height: 100vh;
         }
         .button-portfolio{
+            margin-left: 45px;
+            display: flex;
             flex-wrap: wrap;
         }
-        .row .third,
-        .row .second,
-        .row .first{
+        .row{
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 0 8%;
-            gap: 48px;
-            margin-top: 48px;
         }
-        .row .third{
-            margin-bottom: 48px;
+        .portfolio-card{
+            width: 396px;
+            margin-left: 16px;
+            margin-right: 16px;
         }
-    }
+ }    
      /* -- End Of 428xp --  */
 @media screen and (min-width: 429px) and (max-width: 767px){
         .container{
@@ -978,13 +935,25 @@ h3 {
         }
         .mobile-menu-btn {
             display: block;
-            margin-left: 80%;
+            margin-left: 50%;
             border: none;
             background-color: var(--primary-white);
         }
         .menu,
         .contacts{
             display: none;
+        }
+        .mobile-menu-close{
+            top: 40px;
+            right: 140px;
+        }
+        .mobile-menu-main {
+            width: 650px;
+            display: block;
+            transform: translateX(100%);
+        }
+        .mobile-menu-main.is-open {
+            transform: translateX(0%);
         }
         h1 {
             margin: 0 0 72px 0;
@@ -1008,7 +977,6 @@ h3 {
         .hero-advantages .advantages h3 {
             text-align: center;
         }
-        
         .hero-advantages .advantages p {
             margin-bottom: 72px;
         }
@@ -1025,12 +993,10 @@ h3 {
             letter-spacing: 0.72px;
             margin-bottom: 60px;
         }
-        
         .team {
             margin: 0;
             padding: 96px 0 96px 0;
         }
-        
         .team-members .members {
             display: flex;
             flex-wrap: wrap;
@@ -1053,49 +1019,157 @@ h3 {
         .subscribe-container{
             padding-left: 108px;
         }
-    }  
-        
-   
-
-
-
-@media screen and (min-width: 768px){
+        /* ---------- portfolio ---------- */
+        .container-portfolio {
+            width: 100%;
+            height: 100vh;
+        }
+        .button-portfolio {
+            margin-left: 45px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .row {
+            display: flex;
+            flex-direction: column;
+        }
+        .portfolio-card {
+            width: 396px;
+            margin-left: 16px;
+            margin-right: 16px;
+        }
+    }        
+@media screen and (min-width: 768px) and (max-width: 1157px){
     .container {
-            max-width: 100%;
+            width: 100%;
             height: 100vh;
             overflow-x: hidden;
         }
-    .hero {
+        .contacts-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .pages{
+            padding-right: 121px;
+        }
+        .hero {
            width: 100%;
            height: auto;
            background-position: center;
+        }
+        .modal{
+           position: absolute;
+           top: 180px;
         }
     h1 {
         padding: 0;
         text-transform: capitalize;
         }
-    .menu {
-        padding-right: 0;
-        }
-    /* .contacts {
-        padding-left: 0;
-        display: block;
-        flex-direction: column;     
-        } */
+    .contacts-menu{
+        padding: 0;
+    }
     .contacts .contacts-menu li a{
         display: flex;
         flex-direction: column;
-
-    }    
+    } 
+    .header {
+        padding: 25px 16px;
+    }
+    .active::after {
+        top: 56px;
+    }
+    .advantages{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 96px 16px 96px 16px;
+    }
+    .our-goal{
+        flex-basis: calc(100% / 2 - 24px);
+        width: 356px;
+        height: auto 72px;
+    }
+    .hero-advantages{
+       padding: 0 16px;
+    }
+    .services{
+        padding: 0;
+    }
+    .services-img {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        width: 100%;
+    }
+    .services-image1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .services-image2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .services-imag3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .team{
+        margin-top: 96px;
+    }
+    .our-team-h2{
+        margin-bottom: 72px;
+    }
+    .team {
+        padding: 96px 0;
+    }
+    .team-members .members {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 64px;
+        column-gap: 24px;
+        padding: 0 82px;
+    }
+    .customer-section .customers {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 16px;
+        row-gap: 72px;
+    }
+    .annotation {
+        margin-top: 96px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .notation {
+        padding-left: 108px;
+    }
+    .subscribe-container {
+        padding-left: 108px;
+    }
+     /* ---------- portfolio ---------- */
+    .container-portfolio {
+        width: 850px;
+        height: 100vh;
+    }
+    .button-portfolio{
+        padding-top: 0;
+    }
+    .row {
+       padding: 0;
+       margin: 0 16px;
+    }
+    .portfolio-card {
+        flex-basis: calc(100% / 2 -24px);
+        width: 356px;    
+    }   
 } 
-
-
-
-
-
- 
-/* @media screen and (min-width: 1158px){
-    .container{
+@media screen and (min-width: 1158px) and (max-width: 1440px){
+.container { 
         width: 100%;
         height: 100vh;
         overflow-x: hidden;
@@ -1110,5 +1184,23 @@ h3 {
     .hero {
         width: 100%;
     }
-   
-} */
+    /* ---------- portfolio ---------- */
+    .container-portfolio {
+        width: 100%;
+        height: 100vh;
+    }
+    .button-portfolio {
+        padding-top: 0;
+    }
+    .row {
+        padding: 0;
+        margin: 0 16px;
+    }
+    .portfolio-card {
+        flex-basis: calc(100% / 4 -24px);
+        width: 356px;
+    }  
+    .annotation{
+        margin-top: 120px;
+    }
+}
