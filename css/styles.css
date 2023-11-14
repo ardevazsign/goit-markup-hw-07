@@ -933,14 +933,11 @@ h3 {
             overflow-x: hidden;
         }
         .button-portfolio {
-            margin-left: 0;
+            margin-left: 24px;
             display: flex;
             flex-wrap: wrap;
             gap: 24px;
             justify-content:flex-start;
-        }
-        .design-btn{
-           margin-left: 0;
         }
         .row{
             display: flex;
@@ -1048,12 +1045,11 @@ h3 {
             gap: 24px;
             padding: 50px 50px;
         }
-        .s-media-h4,
         .social-media-icons{
             margin-left: 30px;
         }
-        .notation,
-        .subscribe-container{
+        h4,
+        .notation{
             padding-left: 30px;
         }
         .subscribe-form{
@@ -1061,6 +1057,7 @@ h3 {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding-left: 30px;
         }
         /* ---------- portfolio ---------- */
         .container-portfolio {
