@@ -34,16 +34,17 @@ ul > li{
 }
 /* Text-Logo --nav bar - index pages & contacts*/
 .header{
-    padding: 25px 156px;
+    padding: 5px 156px;
     border-bottom: 1px solid var(--CORNFLOW);
 }
 .top-menu {
-    background-color: var(--primary-white);
+    /* background-color: var(--primary-white); */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}  
+    padding: 0;
+}
 .web {
     color: var(--primary-color);
     font-family: Raleway;
@@ -91,13 +92,15 @@ ul > li{
     width: 100%;
     border-radius: 2px;
     position: relative;
-    top: 40px;
+    top: 22px;
 }
 .page-studio{
+    
      width: 48px, auto;
      height: 24px, auto;
 }
 .page-portfolio{
+   
     width: 66px, auto;
     height: 24px, auto;
 }
@@ -619,6 +622,10 @@ h3 {
     justify-content: center;
  }
 /* ------------------ portfolio.html ------------------*/
+.container-portfolio {
+    width: 100%;
+    max-width: 100%;
+}
 .button-portfolio {
     color: var(--primary-color);
     display: flex;
@@ -673,22 +680,22 @@ h3 {
     margin: 0;
     padding-left: 16px;
 }
-.all-row{
-width: 100%;
-height: auto;
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: center;
-}
 .row{
     margin: 0 300px 120px 300px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     column-gap: 24px;
     row-gap: 48px;
+}
+.portfolio-card{
+   margin-top: auto;
+   margin-bottom: auto;
+   width: 360 px;
+   height: 420px;
 }
      /* Overlay Slider */
 .card{
@@ -718,7 +725,13 @@ justify-content: center;
     position: absolute;
     color:var(--cloud);
     overflow: hidden;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    width: 296px;
+    text-align: left;
+    padding: 0 0 156px 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -804,7 +817,7 @@ justify-content: center;
       margin-bottom: 40px;
   }
 /* ---------------- @media Query ---------*/
- @media screen and (max-width: 428px) {
+ @media screen and (max-width: 428px){
         .container {
             width: 100%;
             height: 100vh;
@@ -848,6 +861,9 @@ justify-content: center;
             top: 100px;
             width: 375px;
         }
+        .advantages-icons{
+            display: none;
+        }
         .hero-advantages .advantages {
             display: block;
             padding: 96px 16px;  
@@ -857,6 +873,9 @@ justify-content: center;
         }
         .hero-advantages .advantages p{
             margin-bottom: 72px;
+        }
+        .services{
+            display: none;
         }
         .services .services-img{
            padding: 0 16px;
@@ -894,13 +913,14 @@ justify-content: center;
            justify-content: center;
         }
         .notation {
-            margin-left: 0;
-            padding-left: 0;
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 0;
         }
         .subscribe-form{
+            padding: 0;
+            margin: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -912,24 +932,25 @@ justify-content: center;
             height: 100vh;
             overflow-x: hidden;
         }
-        .button-portfolio{
-            margin-left: 45px;
+        .button-portfolio {
+            margin-left: 0;
             display: flex;
             flex-wrap: wrap;
+            gap: 24px;
+            justify-content:flex-start;
         }
-        .all-row{
-            padding: 0 16px;
+        .design-btn{
+           margin-left: 0;
         }
         .row{
             display: flex;
             flex-direction: column;
-            padding: 0;
+            margin-left: 0;
         }
         .portfolio-card{
             width: 396px;
         }
  }    
-     /* -- End Of 428xp --  */
 @media screen and (min-width: 429px) and (max-width: 767px){
         .container{
             width: 100%;
@@ -973,6 +994,13 @@ justify-content: center;
             background-position: center;
             overflow-x: hidden;
         }
+        .advantages-icons {
+            display: none;
+        }
+        .our-goal p{
+            width: 356px;
+           padding-top: 0;
+        }
         .hero-advantages .advantages {
             display: flex;
             flex-wrap: wrap;
@@ -981,7 +1009,10 @@ justify-content: center;
             text-align: center;
         }
         .hero-advantages .advantages p {
-            margin-bottom: 72px;
+            margin-bottom: 0;
+        }
+        .services {
+            display: none;
         }
         .services .services-img {
             padding: 0 16px;
@@ -1015,12 +1046,21 @@ justify-content: center;
             display: flex;
             flex-wrap: wrap;
             gap: 24px;
+            padding: 50px 50px;
         }
-        .notation {
-            padding-left: 108px;
+        .s-media-h4,
+        .social-media-icons{
+            margin-left: 30px;
         }
+        .notation,
         .subscribe-container{
-            padding-left: 108px;
+            padding-left: 30px;
+        }
+        .subscribe-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         /* ---------- portfolio ---------- */
         .container-portfolio {
@@ -1028,16 +1068,19 @@ justify-content: center;
             height: 100vh;
         }
         .button-portfolio {
-            margin-left: 40px;
+            gap: 10px;
             display: flex;
             flex-wrap: wrap;
         }
         .row {
             display: flex;
             flex-direction: column;
+            margin-left: 0;
+            justify-content: center;
         }
         .portfolio-card {
             width: 396px;
+            margin: 0;
         }
     }        
 @media screen and (min-width: 768px) and (max-width: 1157px){
@@ -1049,7 +1092,7 @@ justify-content: center;
         .contacts-menu {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 2px;
         }
         .pages{
             padding-right: 121px;
@@ -1067,18 +1110,23 @@ justify-content: center;
         padding: 0;
         text-transform: capitalize;
         }
-    .contacts-menu{
-        padding: 0;
-    }
     .contacts .contacts-menu li a{
         display: flex;
         flex-direction: column;
     } 
     .header {
-        padding: 25px 16px;
+        margin: 0;
+        padding: 0;
+    }
+    .top-menu{
+        margin: 0;
+        padding-top: 0;
     }
     .active::after {
-        top: 56px;
+        top: 28px;
+    }
+    .advantages-icons {
+        display: none;
     }
     .advantages{
         margin: 0;
@@ -1098,28 +1146,8 @@ justify-content: center;
        padding: 0 16px;
     }
     .services{
+        display: none;
         padding: 0;
-    }
-    .services-img {
-        margin: 0;
-        padding: 0;
-        display: grid;
-        width: 100%;
-    }
-    .services-image1 {
-        grid-column: 1;
-        grid-row: 1;
-    }
-    .services-image2 {
-        grid-column: 2;
-        grid-row: 1;
-    }
-    .services-imag3 {
-        grid-column: 1;
-        grid-row: 2;
-    }
-    .team{
-        margin-top: 96px;
     }
     .our-team-h2{
         margin-bottom: 72px;
@@ -1141,7 +1169,7 @@ justify-content: center;
         row-gap: 72px;
     }
     .annotation {
-        margin-top: 96px;
+        margin-top: 120px;
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
@@ -1154,24 +1182,29 @@ justify-content: center;
     }
      /* ---------- portfolio ---------- */
     .container-portfolio {
-        width: 850px;
+       max-width: 1157px;
         height: 100vh;
     }
     .button-portfolio{
-        padding-top: 0;
+        padding-top: 100px;
     }
     .row {
-       padding: 0;
-       margin: 0 16px;
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+       
+       margin: 0;
     }
     .portfolio-card {
-        flex-basis: calc(100% / 2 -24px);
-        width: 356px;    
+        display:flex;
+        flex-wrap: nowrap;
+        width: 356px;
+        height: auto;
     }   
 } 
-@media screen and (min-width: 1158px) and (max-width: 1440px){
+@media screen and (min-width: 1158px) and (max-width: 1629px){
 .container { 
-        width: 100%;
+        max-width: 100%;
         height: 100vh;
         overflow-x: hidden;
     }
@@ -1190,18 +1223,16 @@ justify-content: center;
         width: 100%;
         height: 100vh;
     }
-    .button-portfolio {
-        padding-top: 0;
-    }
     .row {
         padding: 0;
         margin: 0 16px;
     }
     .portfolio-card {
-        flex-basis: calc(100% / 4 -24px);
         width: 356px;
     }  
     .annotation{
         margin-top: 120px;
+        width: 100%;
+        overflow-x: auto;
     }
 }
